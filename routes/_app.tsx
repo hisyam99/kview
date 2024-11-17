@@ -1,4 +1,6 @@
 import { type PageProps } from "$fresh/server.ts";
+import { installGlobals } from "https://deno.land/x/virtualstorage@0.1.0/mod.ts";
+installGlobals();
 
 export default function App({ Component }: PageProps) {
   return (
